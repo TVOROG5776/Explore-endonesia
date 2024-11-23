@@ -1,0 +1,98 @@
+.examples {
+    padding-top: 205px;
+    padding-bottom: 205px;
+    background: rgb(1, 10, 32);
+    @media (max-width: 1200px) {
+        & {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    .examples-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .examples-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 190px;
+            .example-card {
+                display: flex;
+                align-items: center;
+                gap: 130px;
+                @media (max-width: 1200px) {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 35px;
+                    }
+                }
+                .example-card--content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &__title {
+                        color: rgb(255, 255, 255);
+                        font-family: 'DM Sans';
+                        font-size: 42px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        letter-spacing: 0px;
+                        @media (max-width: 1200px) {
+                            & {
+                                color: rgb(255, 255, 255);
+                                font-family: 'DM Sans';
+                                font-size: 40px;
+                                font-weight: 700;
+                                line-height: 46px;
+                                width: 314px;
+                            }
+                        }
+                    }
+                    &__item {
+                        color: rgb(224, 224, 224);
+                        font-family: 'DM Sans';
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 1%;
+                        margin-top: 10px;
+                        
+                    }
+                    &__button {
+                        margin-top: 30px;
+                        border: none;
+                        padding: 15px 30px;
+                        border-radius: 32px;
+                        background: rgb(221, 34, 66);
+                        color: rgb(255, 255, 255);
+                        font-family: 'DM Sans';
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 150%;
+                        letter-spacing: 0%;
+                        transition: color 0.3s ease;
+                        @media (max-width: 1200px) {
+                            & {
+                                padding: 15px 50px;
+                            }
+                        }
+                        &:hover {
+                            color: rgb(1, 10, 32);
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+  }
+
+@media (max-width: 1200px) {
+    .example-card__picture--img {
+        width: 320px;
+    }
+}

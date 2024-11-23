@@ -1,0 +1,70 @@
+@import './components/header';
+@import './components/footer';
+@import './components/main/main-styles';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1284px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 320px;
+  }
+}
+
+.header {
+    background: url('../icons/hero.png') no-repeat center / cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header {
+    background: url('../icons/hero@2x.png') no-repeat center / cover;
+  }
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 320px;
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.example-card__picture--img {
+  width: 320px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../icons/to-right.svg);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../icons/to-left.svg);
+}
