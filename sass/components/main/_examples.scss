@@ -29,6 +29,9 @@
                         gap: 35px;
                     }
                 }
+                .example-card__picture--img {
+                    width: auto;
+                }
                 .example-card--content {
                     display: flex;
                     flex-direction: column;
@@ -40,6 +43,7 @@
                         font-weight: 700;
                         line-height: 50px;
                         letter-spacing: 0px;
+                        width: 480px;
                         @media (max-width: 1200px) {
                             & {
                                 color: rgb(255, 255, 255);
@@ -59,7 +63,12 @@
                         line-height: 28px;
                         letter-spacing: 1%;
                         margin-top: 10px;
-                        
+                        width: 408px;
+                        @media (max-width: 1200px) {
+                            & {
+                                width: auto;
+                            }
+                        }
                     }
                     &__button {
                         margin-top: 30px;
@@ -72,7 +81,6 @@
                         font-size: 18px;
                         font-weight: 700;
                         line-height: 150%;
-                        letter-spacing: 0%;
                         transition: color 0.3s ease;
                         @media (max-width: 1200px) {
                             & {
@@ -84,7 +92,6 @@
                             cursor: pointer;
                         }
                     }
-
                 }
             }
         }
