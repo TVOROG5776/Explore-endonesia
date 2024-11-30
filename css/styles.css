@@ -399,9 +399,6 @@
     gap: 35px;
   }
 }
-.examples .examples-content .examples-cards .example-card .example-card__picture--img {
-  width: auto;
-}
 .examples .examples-content .examples-cards .example-card .example-card--content {
   display: flex;
   flex-direction: column;
@@ -438,7 +435,7 @@
 }
 @media (max-width: 1200px) {
   .examples .examples-content .examples-cards .example-card .example-card--content__item {
-    width: auto;
+    width: 315px;
   }
 }
 .examples .examples-content .examples-cards .example-card .example-card--content__button {
@@ -467,6 +464,11 @@
 @media (max-width: 1200px) {
   .example-card__picture--img {
     width: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  .example-card__picture--img {
+    width: auto;
   }
 }
 .explore {
@@ -1396,10 +1398,6 @@ body {
   .carousel {
     width: 1200px;
   }
-}
-
-.example-card__picture--img {
-  width: 320px;
 }
 
 .carousel-control-next-icon {

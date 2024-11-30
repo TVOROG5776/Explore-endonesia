@@ -29,9 +29,6 @@
                         gap: 35px;
                     }
                 }
-                .example-card__picture--img {
-                    width: auto;
-                }
                 .example-card--content {
                     display: flex;
                     flex-direction: column;
@@ -66,7 +63,7 @@
                         width: 408px;
                         @media (max-width: 1200px) {
                             & {
-                                width: auto;
+                                width: 315px;
                             }
                         }
                     }
@@ -101,5 +98,11 @@
 @media (max-width: 1200px) {
     .example-card__picture--img {
         width: 320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .example-card__picture--img {
+        width: auto;
     }
 }
