@@ -1,12 +1,10 @@
 .hero {
     padding-top: 140px;
-    position: relative;
     .slider-hero {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-left: 70px;
-        position: absolute;
         @media (max-width: 1200px) {
             & {
                 display: none;
@@ -24,57 +22,58 @@
     }
     .hero-content {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        align-items: center;
+        gap: 200px;
         @media (max-width: 1200px) {
             & {
                 display: flex;
+                justify-content: center;
                 gap: 10px;
             }
         }
-        &__title {
-            color: rgb(255, 255, 255);
-            font-family: 'Roboto';
-            font-size: 120px;
-            font-weight: 900;
-            line-height: 130px;
-            letter-spacing: 0%;
-            text-transform: uppercase;
-            width: 627px;
-            @media (max-width: 1200px) {
-                & {
-                    color: rgb(255, 255, 255);
-                    font-family: 'Roboto';
-                    font-size: 58.15px;
-                    font-weight: 900;
-                    line-height: 63px;
-                    letter-spacing: 0%;
-                    text-transform: uppercase;
-                    width: 300px;
+        .hero-description {
+            &__title {
+                color: rgb(255, 255, 255);
+                font-family: 'Roboto';
+                font-size: 120px;
+                font-weight: 900;
+                line-height: 130px;
+                text-transform: uppercase;
+                width: 627px;
+                @media (max-width: 1200px) {
+                    & {
+                        color: rgb(255, 255, 255);
+                        font-family: 'Roboto';
+                        font-size: 58.15px;
+                        font-weight: 900;
+                        line-height: 63px;
+                        text-transform: uppercase;
+                        width: 300px;
+                    }
+                }
+            }
+            &__button {
+                border-radius: 211px;
+                background: rgb(221, 34, 66);
+                border: none;
+                padding: 20px 45px;
+                color: rgba(255, 255, 255, 0.8);
+                font-family: 'DM Sans';
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 150%;
+                transition: color 0.3s ease;
+                @media (max-width: 1200px) {
+                    & {
+                        padding: 20px 70px;
+                    }
+                }
+                &:hover {
+                    color: darkblue;
+                    cursor: pointer;
                 }
             }
         }
-        &__button {
-            border-radius: 211px;
-            background: rgb(221, 34, 66);
-            border: none;
-            padding: 20px 45px;
-            color: rgba(255, 255, 255, 0.8);
-            font-family: 'DM Sans';
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 150%;
-            transition: color 0.3s ease;
-            @media (max-width: 1200px) {
-                & {
-                    padding: 20px 70px;
-                }
-            }
-            &:hover {
-                color: darkblue;
-                cursor: pointer;
-            }
-        }
+        
     }
 }

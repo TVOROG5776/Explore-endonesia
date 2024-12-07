@@ -19,7 +19,6 @@
             font-size: 60px;
             font-weight: 700;
             line-height: 150%;
-            letter-spacing: 0%;
             @media (max-width: 1200px) {
                 & {
                     width: 314px;
@@ -28,7 +27,6 @@
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 46px;
-                    letter-spacing: 0%;
                     text-align: center;
                 }
             }
@@ -59,7 +57,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 130px;
+            gap: 115px;
             @media (max-width: 1200px) {
                 & {
                     display: flex;
@@ -105,7 +103,7 @@
                     font-weight: 400;
                     line-height: 28px;
                     letter-spacing: 0.5px;
-                    width: 340px;
+                    width: 320px;
                     text-align: center;
                     @media (max-width: 1200px) {
                         & {
